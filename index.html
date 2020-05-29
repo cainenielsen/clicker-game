@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="w3-content">
+            <div class="container w3-padding">
+                <div><img class="w3-image" src="tiles/tile230.png"><span id='disp1'>Carrot: </span></div>
+                <button class="w3-green w3-button" onClick='add("carrot");'>Harvest</button class="w3-button">
+                <button id='tog1' class="w3-green w3-button" onClick='toggle("carrot");'>Pause</button class="w3-button">
+                <span class="w3-right">carrots: 50, wood: 10</span>
+                <button id='fact1' class="w3-right w3-grey w3-button" onClick='startItem("carrot");'>Build Carrot Farm</button>
+            </div>
+
+            <div class="container w3-padding">
+                <div><img class="w3-image" src="tiles/tile272.png"><span id='disp2'>Wood: </span></div>
+                <button class="w3-brown w3-button" onClick='add("wood");'>Chop</button class="w3-button">
+                <button id='tog2' class="w3-brown w3-button" onClick='toggle("wood");'>Pause</button class="w3-button">
+                <span class="w3-right">carrots: 10, wood: 50</span>
+                <button id='fact2' class="w3-right w3-grey w3-button" onClick='startItem("wood");'>Build Wood Farm</button class="w3-button">
+            </div>
+
+            <div class="container w3-padding">
+                <div><img class="w3-image" src="tiles/tile273.png"><span id='disp3'>Stone: </span></div>
+                <button class="w3-grey w3-button" onClick='add("stone");'>Mine</button class="w3-button">
+                <button id='tog3' class="w3-grey w3-button" onClick='toggle("stone");'>Pause</button class="w3-button">
+                <span class="w3-right">carrots: 20, wood: 100</span>
+                <button id='fact3' class="w3-right w3-grey w3-button" onClick='startItem("stone");'>Build Quary</button class="w3-button">
+            </div>
+        </div>
+
+        <script defer src="index.js"></script>
+    </body>
+</html>
